@@ -25,5 +25,16 @@ router.get('/',  (req, res) => {
         }
 });
 
+router.post('/', (req, res) => {
+    const board = req.body;
+    const {name, title, content, like} = board;
+    if(!name || !title || !content || !like) {
+        return res.status(400).json({error:'올바르지 않은 입력'})
+    }
+
+    res.status(200).json(BoardHandler.addPost(board));
+
+})
+
 
 export default router;
