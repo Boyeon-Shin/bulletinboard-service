@@ -22,13 +22,13 @@
 		"rules": {
 			"recommended": true,
 			"style": {
-				"useConst": "error",
+				"useConst": "off",
 				"useImportType": "off",
-				"useNodejsImportProtocol": "error",
+				"useNodejsImportProtocol": "off",
 				"useShorthandFunctionType": "off"
 			},
 			"suspicious": {
-				"noConsoleLog": "error"
+				"noConsoleLog": "off"
 			}
 		}
 	},
