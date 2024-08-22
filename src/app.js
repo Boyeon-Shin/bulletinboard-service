@@ -3,7 +3,7 @@ import cookieParser from "cookie-parser";
 import morgan from "morgan";
 import dotenv from "dotenv";
 
-import boardRouter from "./modules/posts/post.router.js";
+import boardRouter from "./modules/boards/routes/post.router.js";
 import {BoardData} from "./db.js";
 
 dotenv.config();
